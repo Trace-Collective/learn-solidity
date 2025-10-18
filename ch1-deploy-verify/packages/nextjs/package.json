@@ -11,7 +11,8 @@
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
     "check-types": "tsc --noEmit --incremental",
     "vercel": "vercel",
-    "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"
+    "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true",
+    "prepare": "husky install || true"
   },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
@@ -53,5 +54,8 @@
     "type-fest": "^4.6.0",
     "typescript": "^5.1.6",
     "vercel": "^32.4.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
