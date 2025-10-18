@@ -56,6 +56,6 @@
     "vercel": "^32.4.1"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   }
 }
