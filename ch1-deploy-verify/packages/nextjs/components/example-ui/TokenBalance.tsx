@@ -35,21 +35,19 @@ export const TokenBalance = () => {
   }
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-100 shadow-xl p-8">
       <div className="card-boy">
-        <h2 className="card-title">
+        <h2 className="card-title items-center justify-center">
           {TokenName} ({TokenSymbol})
         </h2>
-        <div className="stats">
+        <div className="stats mb-4">
           <div className="stat">
             <div className="stat-title">Yout Balance</div>
-            <div className="stat-value text-primary">
-              {TokenBalance ? (Number(TokenBalance) / 1e18).toFixed(4) : "0"}
-            </div>
+            <div className="stat-value text-white">{TokenBalance ? (Number(TokenBalance) / 1e18).toFixed(4) : "0"}</div>
             <div className="stat-desc">{TokenSymbol}</div>
           </div>
         </div>
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-center">
           <Address address={connectedAddress} />
         </div>
       </div>

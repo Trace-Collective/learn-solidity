@@ -79,11 +79,11 @@ export const NFTCollection = () => {
         <div className="stats">
           <div className="stat">
             <div className="stat-title">Total Minted</div>
-            <div className="stat-value text-secondary">{totalSupply?.toString() || "0"}</div>
+            <div className="stat-value text-white">{totalSupply?.toString() || "0"}</div>
           </div>
           <div className="stat">
             <div className="stat-title">You Own</div>
-            <div className="stat-value text-primary">{userBalance?.toString() || "0"}</div>
+            <div className="stat-value text-white">{userBalance?.toString() || "0"}</div>
           </div>
         </div>
 
@@ -100,13 +100,13 @@ export const NFTCollection = () => {
           />
         </div>
 
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-end mt-4">
           <button className="btn btn-primary" onClick={handleMint}>
             Mint NFT
           </button>
         </div>
 
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-white">
           <Address address={connectedAddress} />
         </div>
       </div>

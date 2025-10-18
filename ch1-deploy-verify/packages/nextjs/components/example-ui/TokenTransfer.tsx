@@ -78,7 +78,7 @@ export const TokenTransfer = () => {
           />
         </div>
 
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-end mt-4">
           <button className="btn btn-primary" onClick={handleTransfer} disabled={!recipient || !amount}>
             Transfer
           </button>
