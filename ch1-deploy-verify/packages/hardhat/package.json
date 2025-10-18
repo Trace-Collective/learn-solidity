@@ -14,7 +14,8 @@
     "format": "prettier --write ./*.ts ./deploy/**/*.ts ./scripts/**/*.ts ./test/**/*.ts",
     "test": "REPORT_GAS=true hardhat test --network hardhat",
     "verify": "hardhat etherscan-verify",
-    "hardhat-verify": "hardhat verify"
+    "hardhat-verify": "hardhat verify",
+    "prepare": "husky install || true"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",
@@ -55,5 +56,8 @@
     "dotenv": "^16.0.3",
     "envfile": "^6.18.0",
     "qrcode": "^1.5.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
