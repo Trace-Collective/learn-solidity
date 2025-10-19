@@ -9,6 +9,7 @@
     ]
   },
   "scripts": {
+    "prepare": "git rev-parse --is-inside-work-tree > /dev/null 2>&1 && husky || true",
     "account": "yarn workspace @se-2/hardhat account",
     "chain": "yarn workspace @se-2/hardhat chain",
     "fork": "yarn workspace @se-2/hardhat fork",
@@ -29,12 +30,14 @@
     "next:format": "yarn workspace @se-2/nextjs format",
     "next:check-types": "yarn workspace @se-2/nextjs check-types",
     "next:build": "yarn workspace @se-2/nextjs build",
-    "postinstall": "husky install",
     "precommit": "lint-staged",
     "vercel": "yarn workspace @se-2/nextjs vercel",
     "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo"
   },
   "packageManager": "yarn@3.2.3",
+  "engines": {
+    "node": "20.x"
+  },
   "devDependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3"
