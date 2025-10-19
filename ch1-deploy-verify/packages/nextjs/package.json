@@ -12,7 +12,10 @@
     "check-types": "tsc --noEmit --incremental",
     "vercel": "vercel",
     "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true",
-    "prepare": "husky install || true"
+    "prepare": "husky install || true",
+    "chain": "yarn workspace @se-2/hardhat chain",
+    "deploy": "yarn workspace @se-2/hardhat deploy",
+    "verify": "yarn workspace @se-2/hardhat verify"
   },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
